@@ -15,9 +15,9 @@ const GlobalStyle = createGlobalStyle`
 html{
   margin:0;
   padding:0;
-display:flex;
-flex-direction:column;
-flex-wrap: wrap;
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
   }
 
 p{
