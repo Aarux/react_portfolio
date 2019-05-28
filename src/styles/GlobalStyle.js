@@ -139,53 +139,6 @@ hr{
       font-size: 2.5em;      
     }
   }
-
-  /* iPads (landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-    p{
-      font-size: 1.1em;
-    }
-
-    h1{
-      font-size: 3.5em;
-    }
-    
-    h2{
-      font-size: 3em;
-    }
-    
-    h3{
-      font-size: 2.5em;
-    }
-    
-    h4{
-      font-size: 2.5em;      
-    }
-  }
-
-  /* iPads (portrait) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    p{
-      font-size: 1.1em;
-    }
-
-    h1{
-      font-size: 3.5em;
-    }
-    
-    h2{
-      font-size: 3em;
-    }
-    
-    h3{
-      font-size: 2.5em;
-    }
-    
-    h4{
-      font-size: 2.5em;      
-    }
-
-  }
   
   /* Desktops and laptops ----------- */
   @media only screen  and (min-width : 1224px) {
@@ -419,6 +372,17 @@ const InfoLinks = styled.div`
     color: #f1f1f1;
     text-decoration: underline;
   }
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    a {
+      align-content: center;
+      margin: 5px auto;
+    }
+    p {
+      align-content: center;
+      margin: 5px auto;
+    }
+  }
 `;
 
 const ContactWrapper = styled.div`
@@ -458,30 +422,6 @@ const Socials = styled.div`
 
   /* Smartphones (portrait and landscape) ----------- */
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    a {
-      align-content: center;
-      margin: 5px auto;
-    }
-    p {
-      align-content: center;
-      margin: 5px auto;
-    }
-  }
-
-  /* Smartphones (landscape) ----------- */
-  @media only screen and (min-width: 321px) {
-    a {
-      align-content: center;
-      margin: 5px auto;
-    }
-    p {
-      align-content: center;
-      margin: 5px auto;
-    }
-  }
-
-  /* Smartphones (portrait) ----------- */
-  @media only screen and (max-width: 320px) {
     a {
       align-content: center;
       margin: 5px auto;
