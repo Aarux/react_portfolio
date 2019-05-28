@@ -8,6 +8,7 @@ import Example from "../Example";
 import Gallery from "../Gallery";
 import About from "../About";
 import Contact from "../Contact";
+import Weather from "../Weather/Weather";
 import Footer from "../Footer";
 
 const App = () => (
@@ -21,6 +22,7 @@ const App = () => (
     <Gallery />
     <About />
     <Contact />
+    <Weather />
     <Footer />
   </div>
 );
