@@ -117,52 +117,6 @@ hr{
     }
   }
 
-  /* Smartphones (landscape) ----------- */
-  @media only screen and (min-width : 321px) {
-    p{
-      font-size: 1em;
-    }
-
-    h1{
-      font-size: 3em;
-    }
-    
-    h2{
-      font-size: 2.5em;
-    }
-    
-    h3{
-      font-size: 2em;
-    }
-    
-    h4{
-      font-size: 2em;      
-    }
-  }
-
-  /* Smartphones (portrait) ----------- */
-  @media only screen and (max-width : 320px) {
-    p{
-      font-size: 1em;
-    }
-
-    h1{
-      font-size: 3em;
-    }
-    
-    h2{
-      font-size: 2.5em;
-    }
-    
-    h3{
-      font-size: 2em;
-    }
-    
-    h4{
-      font-size: 2em;      
-    }
-  }
-
   /* iPads (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     p{
