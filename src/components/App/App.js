@@ -2,7 +2,7 @@ import React from "react";
 import { GlobalStyle } from "../../styles/GlobalStyle";
 import Header from "../Header";
 import Banner from "../Banner";
-import Navigation from "../Navigation";
+// import Navigation from "../Navigation";
 import Text from "../Text";
 import Example from "../Example";
 import Gallery from "../Gallery";
@@ -15,7 +15,7 @@ const App = () => (
     <GlobalStyle />
     <Header />
     <Banner />
-    <Navigation />
+    {/* <Navigation /> */}
     <Text />
     <Example />
     <Gallery />

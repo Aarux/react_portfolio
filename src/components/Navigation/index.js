@@ -8,19 +8,19 @@ export class Navigation extends Component {
         <Link>
           <a href="google.se">
             <img src={nav1} alt="" />
-            <h1>Project Gallery</h1>
+            <h4>Project Gallery</h4>
           </a>
         </Link>
         <Link>
           <a href="google.se">
             <img src={nav2} alt="" />
-            <h1>About Me</h1>
+            <h4>About Me</h4>
           </a>
         </Link>
         <Link>
           <a href="google.se">
             <img src={nav3} alt="" />
-            <h1>Contact Me</h1>
+            <h4>Contact Me</h4>
           </a>
         </Link>
       </Nav>

@@ -6,7 +6,7 @@ export class About extends Component {
     return (
       <AboutWrapper>
         <h2>About me</h2>
-        <h1>Introduction: Who am i?</h1>
+        <h3>Introduction: Who am i?</h3>
         <p>
           Hello there! My Name is Gustav Bergman and im 23 y/o and currently
           studiyng Front-End Developer in Stockholm, Sweden. I've been really

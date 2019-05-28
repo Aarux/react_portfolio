@@ -31,7 +31,7 @@ p{
 
 h1{
   font-family: 'Lobster', cursive;
-  font-size: 4.2em;
+  font-size: 5em;
   color: #f1f1f1;
   text-shadow: 1px 1px 10px #121c24;
   margin:0;
@@ -44,14 +44,14 @@ h2{
   text-shadow: 2px 2px 2px #3f5e78;
   text-align: center;
   margin: auto;
-  font-size: 3.4em;
+  font-size: 4em;
   padding:10px;
   padding-bottom: 50px;
 }
 
 h3{
   font-family: 'Lobster', cursive;
-  font-size: 3.5rem;
+  font-size: 3em;
   color: #213d54;
   text-shadow: 1px 1px 2px #3f5e78;
   margin-top: 100px;
@@ -62,8 +62,8 @@ h3{
 
 h4{
   font-family: 'Lobster', cursive;
-  font-size: 2.5rem;
-  color: #213d54;
+  font-size: 3em;
+  color: #f1f1f1;
   text-shadow: 2px 2px 2px #3f5e78;
   text-align: center;
   margin: auto;
@@ -93,6 +93,192 @@ hr{
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    p{
+      font-size: 1em;
+    }
+
+    h1{
+      font-size: 3em;
+    }
+    
+    h2{
+      font-size: 2.5em;
+    }
+    
+    h3{
+      font-size: 2em;
+    }
+    
+    h4{
+      font-size: 2em;      
+    }
+  }
+
+  /* Smartphones (landscape) ----------- */
+  @media only screen and (min-width : 321px) {
+    p{
+      font-size: 1em;
+    }
+
+    h1{
+      font-size: 3em;
+    }
+    
+    h2{
+      font-size: 2.5em;
+    }
+    
+    h3{
+      font-size: 2em;
+    }
+    
+    h4{
+      font-size: 2em;      
+    }
+  }
+
+  /* Smartphones (portrait) ----------- */
+  @media only screen and (max-width : 320px) {
+    p{
+      font-size: 1em;
+    }
+
+    h1{
+      font-size: 3em;
+    }
+    
+    h2{
+      font-size: 2.5em;
+    }
+    
+    h3{
+      font-size: 2em;
+    }
+    
+    h4{
+      font-size: 2em;      
+    }
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    p{
+      font-size: 1.1em;
+    }
+
+    h1{
+      font-size: 3.5em;
+    }
+    
+    h2{
+      font-size: 3em;
+    }
+    
+    h3{
+      font-size: 2.5em;
+    }
+    
+    h4{
+      font-size: 2.5em;      
+    }
+  }
+
+  /* iPads (landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    p{
+      font-size: 1.1em;
+    }
+
+    h1{
+      font-size: 3.5em;
+    }
+    
+    h2{
+      font-size: 3em;
+    }
+    
+    h3{
+      font-size: 2.5em;
+    }
+    
+    h4{
+      font-size: 2.5em;      
+    }
+  }
+
+  /* iPads (portrait) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    p{
+      font-size: 1.1em;
+    }
+
+    h1{
+      font-size: 3.5em;
+    }
+    
+    h2{
+      font-size: 3em;
+    }
+    
+    h3{
+      font-size: 2.5em;
+    }
+    
+    h4{
+      font-size: 2.5em;      
+    }
+
+  }
+  
+  /* Desktops and laptops ----------- */
+  @media only screen  and (min-width : 1224px) {
+    p{
+      font-size: 1.3em;
+    }
+
+    h1{
+      font-size: 4.5em;
+    }
+    
+    h2{
+      font-size: 4em;
+    }
+    
+    h3{
+      font-size: 3.5em;
+    }
+    
+    h4{
+      font-size: 2.2em;      
+    }
+  }
+
+  /* Large screens ----------- */
+  @media only screen  and (min-width : 1824px) {
+    p{
+      font-size: 1.5em;
+    }
+
+    h1{
+      font-size: 5.2em;
+    }
+    
+    h2{
+      font-size: 4.7em;
+    }
+    
+    h3{
+      font-size: 4.2em;
+    }
+    
+    h4{
+      font-size: 2.2em;      
+    }
+
+  }
 `;
 
 const HeaderWrapper = styled.div`
@@ -130,6 +316,26 @@ const Logo = styled.div`
     margin: auto 0;
     padding-left: 5px;
     border-bottom: none;
+  }
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    h2 {
+      font-size: 2.2em;
+    }
+  }
+
+  /* Smartphones (landscape) ----------- */
+  @media only screen and (min-width: 321px) {
+    h2 {
+      font-size: 2.2em;
+    }
+  }
+
+  /* Smartphones (portrait) ----------- */
+  @media only screen and (max-width: 320px) {
+    h2 {
+      font-size: 2.2em;
+    }
   }
 `;
 
@@ -249,16 +455,6 @@ const AboutWrapper = styled.div`
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-
-  h1 {
-    font-size: 3.5em;
-    color: #213d54;
-    text-shadow: 1px 1px 2px #3f5e78;
-    margin-top: 100px;
-    padding: 0 25px;
-    margin: 10px 10%;
-    border-left: 2px solid #121c24;
-  }
 `;
 
 const InfoLinks = styled.div`
@@ -290,16 +486,6 @@ const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 100px;
-
-  h1 {
-    font-size: 2.5em;
-    color: #213d54;
-    text-shadow: 1px 1px 2px #3f5e78;
-    margin-top: 100px;
-    padding: 0 25px;
-    margin: 10px 10%;
-    border-left: 2px solid #121c24;
-  }
 `;
 
 const Socials = styled.div`
@@ -309,31 +495,61 @@ const Socials = styled.div`
   padding-bottom: 100px;
 
   a {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #f1f1f1;
     width: 40%;
-    margin: 10px 10%;
-    border: #111921 1px solid;
-    box-shadow: #192530 1px 1px 10px;
+    margin: 5px 10%;
+    padding: 5px 25px;
     background-color: #1f2f3c;
     transition: 0.3s;
     animation: fadein 0.3s;
-    text-decoration: none;
+    border: #111921 1px solid;
+    box-shadow: #192530 1px 1px 10px;
   }
 
   a:hover {
     background: #213d54;
     border: 1px solid #192530;
-  }
-
-  h1 {
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    font-size: 1.3em;
     color: #f1f1f1;
-    border-left: none;
+    text-decoration: underline;
   }
 
-  h1:hover {
-    text-decoration: #f1f1f1 underline;
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    a {
+      align-content: center;
+      margin: 5px auto;
+    }
+    p {
+      align-content: center;
+      margin: 5px auto;
+    }
+  }
+
+  /* Smartphones (landscape) ----------- */
+  @media only screen and (min-width: 321px) {
+    a {
+      align-content: center;
+      margin: 5px auto;
+    }
+    p {
+      align-content: center;
+      margin: 5px auto;
+    }
+  }
+
+  /* Smartphones (portrait) ----------- */
+  @media only screen and (max-width: 320px) {
+    a {
+      align-content: center;
+      margin: 5px auto;
+    }
+    p {
+      align-content: center;
+      margin: 5px auto;
+    }
   }
 `;
 
