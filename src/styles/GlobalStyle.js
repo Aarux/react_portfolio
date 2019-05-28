@@ -25,7 +25,7 @@ p{
   font-weight: 300;
   font-size: 1.3em;
   color: #121c24;
-  padding: 0 25px;
+  padding: 10px 25px;
   margin: 0 10%;
 }
 

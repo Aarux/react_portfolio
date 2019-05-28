@@ -7,65 +7,72 @@ export class Gallery extends Component {
       <Projects>
         <h2>Project Gallery</h2>
         <p>
-          Here are a few (Keyword being "few") of my previous projects. One
-          project from a previous webdeveloper course and one project from a
-          "Graphic design" course. I don't have much to show yet unfortunately
-          due to issues i had with the computer i used at the time. Almost all
-          of the data, projects and workfiles were lost. But hopefully i can
-          fill this gallery up over time and improve on it's design to better
-          fit a larger quantity of projects.
+          Here are a few project i've worked on thus far. I choose to show one
+          front-end focused project from the current education. A group project
+          where me and my team build a booking app to allow you to book
+          grouprooms within the school, report attendance and more. It was the
+          2nd major team project. The second project i choose was actually a
+          project from a earlier digitalcreations course i had. I've always
+          enjoyed drawing and designing since i really like the creative side of
+          it. Which is why i decided to go for a front-end code focused project
+          as well as a more creative and graphic design focused project. I Don't
+          have too much to put in here but i think this showcase a broader
+          perspective of what i enjoy doing and hopefully i there are a lot more
+          exiting projects in store for the future.
         </p>
         <p>Without further ado, let's get into the projects!</p>
 
-        <h1>Project 1: Webdeveloper course, End project.</h1>
+        <h1>Project Grex</h1>
         <img src={project1} alt="" />
         <p>
-          This was the big main project we had in the end of our
-          "Webdevelopment" course. We had the task to create a website using
-          html, css, php, Mysql (database) and JQuery/Javascript. For me
-          personally it was very similar to this project since i decided to make
-          a portfolio/online resume.
+          This was the 2nd major project in our education this far. We had
+          pretty free hands on what we wanted to develop but had the
+          requirements of using React and Firebase.
         </p>
         <p>
-          I went with a pretty standard and simple design with a navbar in the
-          top with links to my portfolio gallery, about me, contact info etc.
-          Then i had a slider on the index page which featured images from
-          diffrent projects in the portfolio as "banner". then i had a centered
-          "main" div which featured the main content on the side and last but
-          not least, a full width footer at the bottom of the page.
+          We thought about our school and something we thought would be neat to
+          have and decided to go with a booking app. The school has grouprooms
+          but a pretty inconvenient way for booking and we took this idea and
+          tried too build and improve it. Our plan was to make a booking app
+          where the user "aka student" could book the grouprooms, see their/edit
+          bookings, report attendance, features for teachers "aka admins" to
+          book both class and grouprooms, invite their studends to class events
+          and more. The structure and functions proved more complex then
+          expected but with the amazing work from our "Firebase guy" Patrik we
+          reached our goals for the functions and features and even almost had
+          it ready for full release.
         </p>
         <p>
-          To specify some features i had which doesnt show on the image i had a
-          admin page with a upload form where i could upload projects. The form
-          consisted of 4 fields where i filled in the preview image and text as
-          well as the full image and text if you clicked on a specific projekt.
-          The upload form validated file size, type, image proportions, text
-          etc.
-        </p>
-        <p>
-          The project was finished and hosted live in 2014 fully validated
-          without errors in Html and CSS.
+          In this project my main area was the design which i created with the
+          help och a 2nd teammember with the feeadback and ideas provided by our
+          group as a whole.
         </p>
 
-        <h1>Project 2: Digital Creations course, Major project.</h1>
+        <h1>Project Locus</h1>
         <img src={project2} alt="" />
         <p>
-          This was the biggest project i made during my digital creations
-          course. We were assigned to draw a image and color it in Photoshop. I
-          choose to combine this project with my Webdeveloper project and made
-          the images that was going to be featured in my slider/project gallery
-          on my online portfolio. I Choose to draw a helmet featured in the game
-          "Halo 4" called the "Locus" helmet. I used a reference image to help
-          draw the contures of the helmet and the position of some of the
-          details.
+          This was my biggest project i had during my digital creations course.
+          We had it while also working on another major project in another
+          course so i decided to get two birds with one stone and mashed em'
+          togeather. This image was one of the images featured on my first
+          portfolio in a image-slider. I was assigned to draw a image and color
+          it in photoshop so i decided to go with the "Locus" helmet from the
+          "Halo" videogame franchise. For this project i used a reference
+          picture to get the positioning right for the contures as well as
+          marking out the position of some of the details. But other than that
+          it was drawn and colored "by hand" using photoshop.
         </p>
         <p>
-          Appart from making some of the outlines/contures with a reference
-          image i manually colored, shaded and highlighted the image by "hand"
-          using photoshop. The project took a really long time, manily due to
-          the fact i learned alot of new techniques along the way which i
-          implemented in the image. I would guess the image, from start to
-          finish took about 3-4 months.
+          This project to a really long time to finish which was due to a
+          combination of inexperience with photoshop but also cause i kept
+          learning new things and techniques along the way which i tried to
+          implement in the picture. Which caused it to be a bit of a "never
+          ending project" since i was always fixing something with the color,
+          shadow etc. But it was a really fun project and i enjoyed the creative
+          aspect and freedom of drawing. In total i would estimate the project
+          took about 2-4 months from start to finish. But it was worth it cause
+          i learned a lot and was really happy with my personal progress and
+          results.
         </p>
       </Projects>
     );

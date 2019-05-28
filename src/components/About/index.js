@@ -6,18 +6,22 @@ export class About extends Component {
     return (
       <AboutWrapper>
         <h2>About me</h2>
-        <h3>Introduction: Who am i?</h3>
+        <h3>Introduction:</h3>
         <p>
-          Hello there! My Name is Gustav Bergman and im 23 y/o and currently
-          studiyng Front-End Developer in Stockholm, Sweden. I've been really
-          interested in Front-end/webbdevelopment eversince my first
-          webbdeveloper course in school. I thought it was really cool and a bit
-          "hacker" like to create websites. In front-end you have a visual
-          representation of what you're doing/creating. Which i enjoyed a lot
-          and the creativity it brings both in the diffrent ways, solutions,
-          design and structure. I previously studied It Technology with media
-          focus.
+          Hello there! My Name is Gustav Bergman and i'm a 24 y/o student,
+          currently studying to become a front-end developer in Stockholm,
+          Sweden. I've always enjoyed creative things like drawing and i've
+          really enjoyed front-end/webbdevelopment eversince i first got
+          introduced to it in a webbdeveloper course in school. I thought it was
+          really cool and i especially enjoyed the creative aspects that come
+          with front-end and design. I got to try out more classic programming
+          like Java as well but i didn't like it as much since you didn't have
+          the same visual representation of what you are creating. The
+          creativity also comes in many ways in front-end development. Anything
+          from figuring out new solutions, ways to do things and structure too
+          design.
         </p>
+        <p>Before front-end i studied IT-Technology with a media focus.</p>
         <p>
           So, here are some courses related to Front-End that i have studied
           prevoiusly.
@@ -45,27 +49,29 @@ export class About extends Component {
         </ul>
         <p>
           I also enjoy drawing and editing pictures and make my own twist on the
-          original. I'm not very good at drawing by hand (Totally don't use
-          reference pictures, shhhhh!) so photoshop is a great tool for me since
-          i have a lot of tools/features to help out. I enjoy design in general
-          so i lean more towards designer when it comes to front-end as well.
-          I'm really looking forward to learning more about animations,
-          transitions and diffrent effects and techniques to give some spice to
-          the website.
+          original. I'm not very good at drawing by hand so photoshop is a great
+          tool for me since i have a lot of tools/features to help out. I enjoy
+          design in general so i lean more towards designer when it comes to
+          front-end as well. I'm really looking forward to learning more about
+          animations, transitions and diffrent effects and techniques to give
+          some spice to the website.
         </p>
-
         <p>
-          In my spare time i'm the stereotypical "Nerd". I Watch movies, series,
-          streams and game whenever im not studying or drawing.
+          In my spare time i'm the stereotypical "Nerd". I don't do much other
+          then hang out at home watching series, movies, streams you name it.
+          Also always been a huge fan of video games and i've been playing
+          eversince i was a little kid.
         </p>
         <p>
           When it comes to games i play pretty much anything and everything.
-          Anything from fps shooters and MMO's to racing & rythm games. Also
-          play on both console (Xbox) and PC.
+          Anything from fps shooters and MMO's to racing & rythm games. I enjoy
+          videogames in general so i'm not very picky when it comes to the
+          genres.
         </p>
         <p>
-          Currently i mostly play WoW (Where i Raid in a Mythic guild),
-          Overwatch and Osu!.
+          I mostly play Overwatch and the rythm game osu!. But i've also played
+          various games at a pretty high level and was Mythic raider in WoW for
+          some time.
         </p>
         <p>If you're not familiar with the games there are info links below:</p>
         <InfoLinks>
