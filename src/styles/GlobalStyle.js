@@ -272,21 +272,7 @@ const Logo = styled.div`
     border-bottom: none;
   }
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    h2 {
-      font-size: 2.2em;
-    }
-  }
-
-  /* Smartphones (landscape) ----------- */
-  @media only screen and (min-width: 321px) {
-    h2 {
-      font-size: 2.2em;
-    }
-  }
-
-  /* Smartphones (portrait) ----------- */
-  @media only screen and (max-width: 320px) {
+  @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
     h2 {
       font-size: 2.2em;
     }
