@@ -143,7 +143,7 @@ hr{
   /* Desktops and laptops ----------- */
   @media only screen  and (min-width : 1224px) {
     p{
-      font-size: 1.3em;
+      font-size: 1.4em;
     }
 
     h1{
