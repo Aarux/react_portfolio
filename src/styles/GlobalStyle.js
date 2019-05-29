@@ -25,8 +25,7 @@ p{
   font-weight: 300;
   font-size: 1.3em;
   color: #121c24;
-  padding: 10px 25px;
-  margin: 0 10%;
+  padding:15px 0;
 }
 
 h1{
@@ -95,9 +94,10 @@ hr{
 }
 
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
     p{
-      font-size: 1em;
+      font-size: 0.9em;
+      margin: 0 5%;
     }
 
     h1{
@@ -118,9 +118,10 @@ hr{
   }
 
   /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1223px) {
     p{
       font-size: 1.1em;
+      margin: 0 7%;
     }
 
     h1{
@@ -144,6 +145,7 @@ hr{
   @media only screen  and (min-width : 1224px) {
     p{
       font-size: 1.4em;
+      margin: 0 8%;
     }
 
     h1{
@@ -167,6 +169,8 @@ hr{
   @media only screen  and (min-width : 1824px) {
     p{
       font-size: 1.5em;
+      padding: 10px 25px;
+      margin: 0 10%;
     }
 
     h1{
