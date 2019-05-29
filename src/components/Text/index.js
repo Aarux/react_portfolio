@@ -7,19 +7,22 @@ export class Text extends Component {
       <TextWrapper>
         <h2>Welcome to my Portfolio!</h2>
         <p>
-          Hi, My name is Gustav Bergman and I am currently studying to become a
-          Front-end developer. Welcome to my online portfolio! This portfolio is
-          a part of the first individual project assignment but it's something i
-          will keep working on over time as the course continue. Here you'll be
-          able to read a little about me, what i do, what i've studied
-          previously and the courses i've taken. But also to view previous work.
-          On top of that you'll find some info about me personally. What i like
-          to do in my spare time, hobbies, interests, you name it. The purpose
-          of this website is also to provide a way for me to showcase what i can
-          do and what i learned so far through out the education while i
-          simultaneously work toward learning new things and improving upon the
-          base knowledge i already possess. Which i then can implement to the
-          website in the future.
+          Hi, My name is Gustav Bergman and Welcome to my Portfolio! I am
+          currently studying to become a front-end developer and this portfolio
+          is a part of our second individual project where we take our portfolio
+          and rebuild it using React.js framework. React has been fun to work
+          with and this is my first webbsite built using React.js. The plan is
+          to keep working on this over time and implement the things i learn
+          into this portfolio while also showcasing what i do/have done in the
+          past.
+        </p>
+        <p>
+          So here you'll find some general info about me, what i do, previous
+          projects, spare time activities, you name it! The main purpose for
+          this website at the moment is to be a way for me to showcase what i
+          can do and what i've learned this far while simultaneously working on
+          improving and learning new things to implement and improve on this
+          website in the future as i get more project and work to fill it with.
         </p>
       </TextWrapper>
     );
