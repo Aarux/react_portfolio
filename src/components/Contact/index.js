@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import { ContactWrapper, Socials } from "../../styles/GlobalStyle";
 
+const cr = {
+  margin: "0 10%",
+  padding: "10px 25px"
+};
+
 export class Contact extends Component {
   render() {
     return (
@@ -23,7 +28,9 @@ export class Contact extends Component {
           <a className="social-links" href="https://500px.com/marensandvold">
             Maren Sandvold - Gallery
           </a>
-          <p>Copyright © 2019 Maren Sandvold. All rights reserved.</p>
+          <p style={cr}>
+            Copyright © 2019 Maren Sandvold. All rights reserved.
+          </p>
         </Socials>
       </ContactWrapper>
     );

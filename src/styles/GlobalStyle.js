@@ -381,6 +381,7 @@ const InfoLinks = styled.div`
     a {
       align-content: center;
       margin: 5px auto;
+      font-size: 1em;
     }
     p {
       align-content: center;
@@ -429,6 +430,7 @@ const Socials = styled.div`
     a {
       align-content: center;
       margin: 5px auto;
+      font-size: 1em;
     }
     p {
       align-content: center;
