@@ -448,6 +448,12 @@ const FooterWrapper = styled.div`
     margin: auto;
     padding-top: 16px;
   }
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+    p {
+      font-size: 0.9em;
+    }
+  }
 `;
 
 export {
