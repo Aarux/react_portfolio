@@ -23,16 +23,14 @@ html{
 p{
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  font-size: 1.3em;
   color: #121c24;
-  padding:15px 0;
+  padding:5px 0;
+  margin: 0 8%;
 }
 
 h1{
   font-family: 'Lobster', cursive;
-  font-size: 5em;
   color: #f1f1f1;
-  text-shadow: 1px 1px 10px #121c24;
   margin:0;
   padding:0;
 }
@@ -40,46 +38,33 @@ h1{
 h2{
   font-family: 'Lobster', cursive;
   color: #213d54;
-  text-shadow: 2px 2px 2px #3f5e78;
   text-align: center;
   margin: auto;
-  font-size: 4em;
   padding:10px;
   padding-bottom: 50px;
 }
 
 h3{
   font-family: 'Lobster', cursive;
-  font-size: 3em;
   color: #213d54;
-  text-shadow: 1px 1px 2px #3f5e78;
   margin-top: 100px;
   padding: 0 25px;
-  margin: 0 10%;
+  margin: 0 8%;
   border-left: 2px solid #121c24;
 }
 
 h4{
   font-family: 'Lobster', cursive;
-  font-size: 3em;
   color: #f1f1f1;
-  text-shadow: 2px 2px 2px #3f5e78;
   text-align: center;
   margin: auto;
   padding: 10px;
 }
 
-
 a{
   cursor: pointer;
   text-decoration: none;
   display: flex;
-}
-
-img{
-  width: calc(30% - 2px);
-  margin: 1.66%;
-  border:1px solid #192530;
 }
 
 ul{
@@ -96,68 +81,65 @@ hr{
   /* Smartphones (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
     p{
-      font-size: 0.9em;
-      margin: 0 5%;
+      font-size: 0.8em;
     }
 
     h1{
-      font-size: 3em;
+      font-size: 2.7em;
     }
     
     h2{
-      font-size: 2.5em;
+      font-size: 2.2em;
     }
     
     h3{
-      font-size: 2em;
+      font-size: 1.7em;
     }
     
     h4{
-      font-size: 2em;      
+      font-size: 1.5em;      
     }
   }
 
   /* iPads (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1223px) {
     p{
-      font-size: 1.1em;
-      margin: 0 7%;
+      font-size: 1em;
     }
 
     h1{
-      font-size: 3.5em;
+      font-size: 3.1em;
     }
     
     h2{
-      font-size: 3em;
+      font-size: 2.6em;
     }
     
     h3{
-      font-size: 2.5em;
+      font-size: 2.1em;
     }
     
     h4{
-      font-size: 2.5em;      
+      font-size: 1.9em;      
     }
   }
   
   /* Desktops and laptops ----------- */
   @media only screen  and (min-width : 1224px) {
     p{
-      font-size: 1.4em;
-      margin: 0 8%;
+      font-size: 1.2em;
     }
 
     h1{
-      font-size: 4.5em;
+      font-size: 3.4em;
     }
     
     h2{
-      font-size: 4em;
+      font-size: 2.9em;
     }
     
     h3{
-      font-size: 3.5em;
+      font-size: 2.4em;
     }
     
     h4{
@@ -168,25 +150,25 @@ hr{
   /* Large screens ----------- */
   @media only screen  and (min-width : 1824px) {
     p{
-      font-size: 1.5em;
+      font-size: 1.6em;
       padding: 10px 25px;
-      margin: 0 10%;
+      margin: 0 12%;
     }
 
     h1{
-      font-size: 5.2em;
+      font-size: 3.7em;
     }
     
     h2{
-      font-size: 4.7em;
+      font-size: 3.2em;
     }
     
     h3{
-      font-size: 4.2em;
+      font-size: 2.7em;
     }
     
     h4{
-      font-size: 2.2em;      
+      font-size: 2.5em;      
     }
 
   }
@@ -194,15 +176,15 @@ hr{
 
 const HeaderWrapper = styled.div`
   width: 100%;
-  height: 76px;
+  height: 60px;
   background-color: #121c24;
   z-index: 100;
   position: fixed;
-  border-bottom: 2px solid #192530;
+  box-shadow: #192530 2px 2px 5px;
 `;
 
 const Logo = styled.div`
-  height: 76px;
+  height: 60px;
   margin: auto 0;
   padding-left: 10px;
   display: flex;
@@ -213,26 +195,20 @@ const Logo = styled.div`
 
   img {
     margin: auto 0;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     border: 1px solid #192530;
     background-color: #111921;
   }
 
   h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #f1f1f1;
     text-shadow: 1px 1px 5px #111921;
     margin: auto 0;
     padding-left: 5px;
     border-bottom: none;
-  }
-  /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
-    h2 {
-      font-size: 2.2em;
-    }
   }
 `;
 
@@ -246,11 +222,16 @@ const Image = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
+  box-shadow: #192530 0px 2px 5px;
 `;
 
 const Headline = styled.div`
   text-align: center;
   margin: auto;
+
+  h1 {
+    text-shadow: 1px 1px 10px #121c24;
+  }
 `;
 
 const Nav = styled.div`
@@ -258,7 +239,6 @@ const Nav = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  /* background: #121c24; */
 `;
 
 const Link = styled.div`
@@ -311,7 +291,6 @@ const TextWrapper = styled.div`
 const ExampleWrapper = styled.div`
   display: flex;
   width: 100%;
-  /* background: #121c24; */
 `;
 
 const Examples = styled.div`
@@ -322,7 +301,7 @@ const Examples = styled.div`
   img {
     width: calc(30% - 2px);
     margin: 1.66%;
-    border: 1px solid #192530;
+    box-shadow: #192530 2px 2px 5px;
   }
 `;
 
@@ -331,19 +310,45 @@ const Projects = styled.div`
   padding-bottom: 50px;
 
   h1 {
-    font-size: 3em;
     color: #213d54;
-    text-shadow: 1px 1px 2px #3f5e78;
     margin-top: 100px;
     padding: 0 25px;
-    margin: 10px 10%;
+    margin: 10px 8%;
+    margin-top: 50px;
     border-left: 2px solid #121c24;
   }
 
   img {
-    width: calc(80% - 2px);
-    margin: 0 10%;
-    border: 1px solid #192530;
+    width: calc(84% - 2px);
+    margin: 0 8%;
+    box-shadow: #192530 1px 1px 5px;
+  }
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    h1 {
+      font-size: 1.9em;
+    }
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1223px) {
+    h1 {
+      font-size: 2.3em;
+    }
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1224px) {
+    h1 {
+      font-size: 2.6em;
+    }
+  }
+
+  /* Large screens ----------- */
+  @media only screen and (min-width: 1824px) {
+    h1 {
+      font-size: 2.9em;
+    }
   }
 `;
 
@@ -367,7 +372,7 @@ const InfoLinks = styled.div`
     transition: 0.3s;
     animation: fadein 0.3s;
     border: #111921 1px solid;
-    box-shadow: #192530 1px 1px 10px;
+    box-shadow: #192530 1px 1px 5px;
   }
 
   a:hover {
@@ -377,15 +382,44 @@ const InfoLinks = styled.div`
     text-decoration: underline;
   }
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
     a {
+      font-size: 0.8em;
       align-content: center;
       margin: 5px auto;
-      font-size: 1em;
     }
+
     p {
       align-content: center;
       margin: 5px auto;
+    }
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1223px) {
+    a {
+      font-size: 1em;
+      align-content: center;
+      margin: 5px auto;
+    }
+
+    p {
+      align-content: center;
+      margin: 5px auto;
+    }
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1224px) {
+    a {
+      font-size: 1.2em;
+    }
+  }
+
+  /* Large screens ----------- */
+  @media only screen and (min-width: 1824px) {
+    a {
+      font-size: 1.6em;
     }
   }
 `;
@@ -395,6 +429,10 @@ const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 100px;
+
+  h3 {
+    margin-bottom: 25px;
+  }
 `;
 
 const Socials = styled.div`
@@ -406,7 +444,6 @@ const Socials = styled.div`
   a {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
     color: #f1f1f1;
     width: 40%;
     margin: 5px 10%;
@@ -415,7 +452,7 @@ const Socials = styled.div`
     transition: 0.3s;
     animation: fadein 0.3s;
     border: #111921 1px solid;
-    box-shadow: #192530 1px 1px 10px;
+    box-shadow: #192530 1px 1px 5px;
   }
 
   a:hover {
@@ -426,23 +463,54 @@ const Socials = styled.div`
   }
 
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
     a {
+      font-size: 0.8em;
       align-content: center;
       margin: 5px auto;
-      font-size: 1em;
     }
+
     p {
       align-content: center;
       margin: 5px auto;
+    }
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1223px) {
+    a {
+      font-size: 1em;
+      align-content: center;
+      margin: 5px auto;
+    }
+
+    p {
+      align-content: center;
+      margin: 5px auto;
+    }
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1224px) {
+    a {
+      font-size: 1.2em;
+    }
+  }
+
+  /* Large screens ----------- */
+  @media only screen and (min-width: 1824px) {
+    a {
+      font-size: 1.6em;
     }
   }
 `;
 
 const FooterWrapper = styled.div`
   width: 100%;
-  height: 76px;
+  height: 60px;
   background-color: #121c24;
+  box-shadow: #192530 2px 0px 5px;
+
   border-top: 2px solid #192530;
 
   p {
@@ -452,7 +520,6 @@ const FooterWrapper = styled.div`
     text-shadow: 2px 2px #121c24;
     text-align: center;
     margin: auto;
-    padding-top: 16px;
   }
   /* Smartphones (portrait and landscape) ----------- */
   @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
