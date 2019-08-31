@@ -16,9 +16,7 @@ export class Contact extends Component {
           <a href="mailto:&#103;&#117;&#115;&#116;&#097;&#118;&#095;&#098;&#101;&#114;&#103;&#109;&#097;&#110;&#057;&#053;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
             Gustav Bergman - E-Mail
           </a>
-          <a href="https://github.com/Aarux/portfolio">
-            Gustav Bergman - Github
-          </a>
+          <a href="https://github.com/Aarux">Gustav Bergman - Github</a>
         </Socials>
         <h3>Photographer Contact info</h3>
         <Socials>

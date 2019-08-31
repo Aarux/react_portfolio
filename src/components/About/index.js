@@ -52,17 +52,13 @@ export class About extends Component {
         </ul>
         <p>
           In my spare time i like to just relax at home and play video games,
-          watch a movie/show or drawing. All though i've haven't drawn as much
-          in recent years due to an injury from an accident in November, 2017.
-          It's getting better but i'm yet to fully recover.
+          watch a movie/show or drawing.
         </p>
         <p>
-          When it comes to games i play anything. I'm just a huge fan of games
-          in general. Anything from Racing games, rythm games and MMO's to FPS,
-          RPG's and fighting games. As of late i mostly play Overwatch, osu! and
-          Black Desert Online. I've also played various games at a pretty high
-          level like top 500 players in Overwatch competitive and Mythic
-          progression raiding in World of Warcraft. If you are not familiar with
+          When it comes to games i play anything, i'm just a huge fan of video
+          games in general so anything goes. I also enjoy trying and learning
+          new things and games. Some of the games i play are Overwatch, World of
+          Warcracft, Black Desert Online and osu!.If you are not familiar with
           the games and what to know more you can check out the information
           links below.
         </p>
@@ -73,7 +69,10 @@ export class About extends Component {
           <a href="https://en.wikipedia.org/wiki/Overwatch_(video_game)">
             Overwatch
           </a>
-          <a href="https://osu.ppy.sh/help/wiki/Welcome">Osu!</a>
+          <a href="https://osu.ppy.sh/help/wiki/Welcome">osu!</a>
+          <a href="https://en.wikipedia.org/wiki/Black_Desert_Online">
+            Black Desert Online
+          </a>
         </InfoLinks>
       </AboutWrapper>
     );
