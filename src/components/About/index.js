@@ -54,7 +54,7 @@ export class About extends Component {
           In my spare time i like to just relax at home and play video games,
           watch a movie/show or drawing.
         </p>
-        <p>
+        {/* <p>
           When it comes to games i play anything, i'm just a huge fan of video
           games in general so anything goes. I also enjoy trying and learning
           new things and games. Some of the games i play are Overwatch, World of
@@ -73,7 +73,7 @@ export class About extends Component {
           <a href="https://en.wikipedia.org/wiki/Black_Desert_Online">
             Black Desert Online
           </a>
-        </InfoLinks>
+        </InfoLinks> */}
       </AboutWrapper>
     );
   }
