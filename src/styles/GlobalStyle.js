@@ -10,6 +10,7 @@ import image2 from "../assets/image2.jpg";
 import image3 from "../assets/image3.jpg";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
+
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
 /* -------------- GLOBAL STYLES ------------------- */
