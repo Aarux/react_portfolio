@@ -11,12 +11,15 @@ import Contact from "../Contact";
 import Weather from "../Weather/Weather";
 import Footer from "../Footer";
 
+/* Copyright © 2019 Gustav Bergman. All rights reserved. */
+
+/* <Navigation /> */
+
 const App = () => (
   <div>
     <GlobalStyle />
     <Header />
     <Banner />
-    {/* <Navigation /> */}
     <Text />
     <Example />
     <Gallery />
@@ -24,6 +27,7 @@ const App = () => (
     <Contact />
     <Weather />
     <Footer />
+    {/*  Copyright © 2019 Gustav Bergman. All rights reserved.  */}
   </div>
 );
 

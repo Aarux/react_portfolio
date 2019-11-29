@@ -586,17 +586,11 @@ const FooterWrapper = styled.div`
 
   p {
     font-family: "Oswald", sans-serif;
-    font-size: 1.3em;
     color: #f1f1f1;
     text-shadow: 2px 2px #121c24;
     text-align: center;
     margin: auto;
-  }
-  /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
-    p {
-      font-size: 0.9em;
-    }
+    padding: 0;
   }
 `;
 

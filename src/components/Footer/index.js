@@ -5,7 +5,7 @@ export class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <p>Copyright © 2019 Gustav Bergman. All rights reserved.</p>
+        <p>Copyright © 2019 All rights reserved.</p>
       </FooterWrapper>
     );
   }
