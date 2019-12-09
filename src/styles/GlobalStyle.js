@@ -89,7 +89,7 @@ hr{
   /* ------------------------------------------------ */
   /* ------------------------------------------------ */
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+  @media only screen and (min-width : 320px) and (max-width : 767px) {
     p{
       font-size: 0.8em;
     }
@@ -112,7 +112,7 @@ hr{
   }
 
   /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1223px) {
+  @media only screen and (min-width : 768px) and (max-width : 1223px) {
     p{
       font-size: 1em;
     }
@@ -374,14 +374,14 @@ const Projects = styled.div`
     box-shadow: #192530 1px 1px 5px;
   }
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
     h1 {
       font-size: 1.9em;
     }
   }
 
   /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1223px) {
+  @media only screen and (min-width: 768px) and (max-width: 1223px) {
     h1 {
       font-size: 2.3em;
     }
@@ -440,7 +440,7 @@ const InfoLinks = styled.div`
     text-decoration: underline;
   }
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
     a {
       font-size: 0.8em;
       align-content: center;
@@ -454,7 +454,7 @@ const InfoLinks = styled.div`
   }
 
   /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1223px) {
+  @media only screen and (min-width: 768px) and (max-width: 1223px) {
     a {
       font-size: 1em;
       align-content: center;
@@ -529,7 +529,7 @@ const Socials = styled.div`
   }
 
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
     a {
       font-size: 0.8em;
       align-content: center;
@@ -543,7 +543,7 @@ const Socials = styled.div`
   }
 
   /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1223px) {
+  @media only screen and (min-width: 768px) and (max-width: 1223px) {
     a {
       font-size: 1em;
       align-content: center;

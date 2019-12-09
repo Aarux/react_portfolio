@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { AboutWrapper } from "../../styles/GlobalStyle";
+import { AboutWrapper /*InfoLinks*/ } from "../../styles/GlobalStyle";
 
 export class About extends Component {
   render() {
