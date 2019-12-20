@@ -250,6 +250,7 @@ const Image = styled.div`
   background-image: url(${banner480p});
   background-size: cover;
   background-position: center;
+  background-color: #121c24;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
