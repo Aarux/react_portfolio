@@ -40,7 +40,9 @@ p{
   padding:5px 0;
   margin: 0 8%;
 }
-
+strong {
+    color: #213d54;
+  }
 h1{
   font-family: 'Lobster', cursive;
   color: #f1f1f1;
@@ -293,6 +295,7 @@ const TextWrapper = styled.div`
   flex-wrap: wrap;
   padding-top: 25px;
   padding-bottom: 50px;
+  text-align: center;
 `;
 
 /* ------------------------------------------------ */
@@ -343,10 +346,46 @@ const Projects = styled.div`
     margin: 0 8%;
     box-shadow: #192530 1px 1px 5px;
   }
+
+  a {
+    width: 33%;
+    margin: 0 8%;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #f1f1f1;
+    background-color: #1f2f3c;
+    transition: 0.3s;
+    animation: fadein 0.3s;
+    border: #111921 1px solid;
+    box-shadow: #192530 1px 1px 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  a:hover {
+    background: #213d54;
+    border: 1px solid #192530;
+    color: #f1f1f1;
+    text-decoration: underline;
+  }
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
     h1 {
       font-size: 1.9em;
+    }
+    a {
+      font-size: 0.6em;
+    }
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    h1 {
+      font-size: 2.1em;
+    }
+    a {
+      font-size: 0.8em;
     }
   }
 
@@ -355,6 +394,9 @@ const Projects = styled.div`
     h1 {
       font-size: 2.3em;
     }
+    a {
+      font-size: 1em;
+    }
   }
 
   /* Desktops and laptops ----------- */
@@ -362,12 +404,18 @@ const Projects = styled.div`
     h1 {
       font-size: 2.6em;
     }
+    a {
+      font-size: 1.2em;
+    }
   }
 
   /* Large screens ----------- */
   @media only screen and (min-width: 1824px) {
     h1 {
       font-size: 2.9em;
+    }
+    a {
+      font-size: 1.6em;
     }
   }
 `;
@@ -454,22 +502,6 @@ const InfoLinks = styled.div`
 
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
-/* ----------- CONTACT ME WRAPPER STYLE ----------- */
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
-const ContactWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 100px;
-
-  h3 {
-    margin-bottom: 25px;
-  }
-`;
-
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
 /* ------------ FOOTER WRAPPER STYLE -------------- */
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
@@ -478,6 +510,72 @@ const FooterWrapper = styled.div`
   background-color: #121c24;
   box-shadow: #192530 2px 0px 5px;
   border-top: 2px solid #192530;
+  text-align: center;
+  h3 {
+    color: #f1f1f1;
+    text-shadow: 1px 1px 10px #121c24;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    width: 33%;
+    margin: 0 auto;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #f1f1f1;
+    background-color: #1f2f3c;
+    transition: 0.3s;
+    animation: fadein 0.3s;
+    border: #111921 1px solid;
+    box-shadow: #192530 1px 1px 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  a:hover {
+    background: #213d54;
+    border: 1px solid #192530;
+    color: #f1f1f1;
+    text-decoration: underline;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    a {
+      font-size: 0.6em;
+    }
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    a {
+      font-size: 0.8em;
+    }
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-width: 768px) and (max-width: 1223px) {
+    a {
+      font-size: 1em;
+    }
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1224px) {
+    a {
+      font-size: 1.2em;
+    }
+  }
+
+  /* Large screens ----------- */
+  @media only screen and (min-width: 1824px) {
+    a {
+      font-size: 1.6em;
+    }
+  }
 `;
 
 const Cc = styled.span`
@@ -489,50 +587,6 @@ const Cc = styled.span`
   padding: 25px 0;
   color: #f1f1f1;
   margin: auto;
-`;
-
-/* ------------------------------------------------ */
-/* ------------ SOCIAL LINKS STYLE ---------------- */
-/* ------------------------------------------------ */
-const Socials = styled.div`
-  padding: 25px;
-  padding-bottom: 25px;
-  p {
-    color: #f1f1f1;
-    margin: 0;
-    font-size: 1em;
-    margin-left: 25px;
-  }
-  h3 {
-    margin: 0;
-    margin-bottom: 15px;
-    color: #f1f1f1;
-    text-shadow: 1px 1px 10px #121c24;
-  }
-
-  a {
-    width: 200px;
-    padding: 5px 25px;
-    margin-left: 25px;
-    font-family: "Oswald", sans-serif;
-    font-size: 1.2em;
-    font-weight: 300;
-    color: #f1f1f1;
-    background-color: #1f2f3c;
-    transition: 0.3s;
-    animation: fadein 0.3s;
-    border: #111921 1px solid;
-    box-shadow: #192530 1px 1px 5px;
-    align-items: center;
-    border-radius: 5px;
-  }
-
-  a:hover {
-    background: #213d54;
-    border: 1px solid #192530;
-    color: #f1f1f1;
-    text-decoration: underline;
-  }
 `;
 
 const Icon = styled.div`
@@ -563,8 +617,6 @@ export {
   Projects,
   AboutWrapper,
   InfoLinks,
-  ContactWrapper,
-  Socials,
   FooterWrapper,
   Cc,
   logo,

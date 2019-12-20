@@ -7,7 +7,7 @@ export class Banner extends Component {
       <Image>
         <Headline>
           <h1>Hi, I'm Gustav.</h1>
-          <h1>I build and design applications!</h1>
+          <h1>I'm a Web Developer & Designer!</h1>
         </Headline>
       </Image>
     );

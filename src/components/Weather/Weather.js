@@ -7,7 +7,7 @@ const WeatherContainer = styled.div`
   position: fixed;
   margin-right: 10px;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   font-size: 1em;
   font-weight: 600;
   right: 0;
@@ -19,7 +19,7 @@ const P = styled.p`
   font-size: 1em;
   color: #f1f1f1;
   strong {
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: -3px;
   }
   @media (max-width: 600px) {

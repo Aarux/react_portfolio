@@ -6,10 +6,7 @@ import Text from "../Text";
 import Example from "../Example";
 import Gallery from "../Gallery";
 import About from "../About";
-// import Contact from "../Contact";
 import Footer from "../Footer";
-
-/* Copyright © 2019 Gustav Bergman. All rights reserved. */
 
 const App = () => (
   <div>
@@ -20,7 +17,6 @@ const App = () => (
     <Example />
     <Gallery />
     <About />
-    {/* <Contact /> */}
     <Footer />
     {/*  Copyright © 2019 Gustav Bergman. All rights reserved.  */}
   </div>
