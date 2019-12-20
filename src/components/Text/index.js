@@ -6,7 +6,7 @@ export class Text extends Component {
     return (
       <TextWrapper>
         <h2>Welcome to my Portfolio!</h2>
-        <p>
+        {/* <p>
           Hi, My name is Gustav Bergman and Welcome to my Portfolio! I am
           currently studying to become a front-end developer and this portfolio
           is a part of our second individual project where we take our portfolio
@@ -23,7 +23,7 @@ export class Text extends Component {
           can do and what i've learned this far while simultaneously working on
           improving and learning new things to implement and improve on this
           website in the future as i get more project and work to fill it with.
-        </p>
+        </p> */}
       </TextWrapper>
     );
   }

@@ -1,15 +1,23 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
-import banner from "../assets/banner.jpg";
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* -------------- IMAGE IMPORTS ------------------- */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+import banner480p from "../assets/banner480p.jpg";
+import banner720p from "../assets/banner720p.jpg";
+import banner900p from "../assets/banner900p.jpg";
+import banner1080p from "../assets/banner1080p.jpg";
+import banner1440p from "../assets/banner1440p.jpg";
+import banner2160p from "../assets/banner2160p.jpg";
 import logo from "../assets/logo.jpg";
-import nav1 from "../assets/nav1.jpg";
-import nav2 from "../assets/nav2.jpg";
-import nav3 from "../assets/nav3.jpg";
 import image1 from "../assets/image1.jpg";
 import image2 from "../assets/image2.jpg";
 import image3 from "../assets/image3.jpg";
-import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png";
+import project1 from "../assets/project1.jpg";
+import project2 from "../assets/project2.jpg";
 
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
@@ -203,19 +211,19 @@ const HeaderWrapper = styled.div`
 /* ------------------------------------------------ */
 const Logo = styled.div`
   height: 60px;
-  margin: auto 0;
   padding-left: 10px;
   display: flex;
   flex-flow: row nowrap;
   border-bottom: 2px solid #192530;
   transition: 0.2s;
   animation: fadein 0.3s;
+  align-items: center;
 
   img {
-    margin: auto 0;
     width: 45px;
     height: 45px;
     border-radius: 50%;
+    align-items: center;
     border: 1px solid #192530;
     background-color: #111921;
   }
@@ -224,8 +232,9 @@ const Logo = styled.div`
     font-size: 2em;
     color: #f1f1f1;
     text-shadow: 1px 1px 5px #111921;
-    margin: auto 0;
-    padding-left: 5px;
+    align-items: center;
+    margin-left: 0;
+    padding-left: 10px;
     border-bottom: none;
   }
 `;
@@ -236,7 +245,7 @@ const Logo = styled.div`
 const Image = styled.div`
   height: 100vh;
   width: 100%;
-  background-image: url(${banner});
+  background-image: url(${banner1080p});
   background-size: cover;
   background-position: center;
   display: flex;
@@ -244,6 +253,21 @@ const Image = styled.div`
   flex-wrap: wrap;
   text-align: center;
   box-shadow: #192530 0px 2px 5px;
+  @media only screen and (max-height: 480px) {
+    background-image: url(${banner480p});
+  }
+  @media only screen and (max-height: 720px) {
+    background-image: url(${banner720p});
+  }
+  @media only screen and (max-height: 900px) {
+    background-image: url(${banner900p});
+  }
+  @media only screen and (max-height: 1440px) {
+    background-image: url(${banner1440p});
+  }
+  @media only screen and (max-height: 2160px) {
+    background-image: url(${banner2160p});
+  }
 `;
 
 /* ------------------------------------------------ */
@@ -255,60 +279,6 @@ const Headline = styled.div`
 
   h1 {
     text-shadow: 1px 1px 10px #121c24;
-  }
-`;
-
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
-/* ------------- NAVIGATION STYLES ---------------- */
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
-const Nav = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-`;
-
-/* ------------------------------------------------ */
-/* --------------- NAV LINK STYLE ----------------- */
-/* ------------------------------------------------ */
-const Link = styled.div`
-  padding: 20px;
-  width: calc(33% - 142px);
-  min-width: 300px;
-  margin: 25px 50px;
-  background-color: #1f2f3c;
-  border: #111921 1px solid;
-  box-shadow: #192530 1px 1px 10px;
-
-  :hover {
-    background: #213d54;
-    border: 1px solid #192530;
-  }
-
-  :hover h1 {
-    text-decoration: #f1f1f1 underline;
-  }
-  a {
-    align-items: center;
-    flex-direction: column;
-    text-decoration: none;
-    padding-bottom: 10px;
-  }
-
-  h1 {
-    font-size: 2.5em;
-    text-shadow: 2px 2px 2px #3f5e78;
-    padding: 10px;
-  }
-
-  img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 1px solid #121c24;
-    background-color: #121c24;
   }
 `;
 
@@ -499,26 +469,62 @@ const ContactWrapper = styled.div`
 `;
 
 /* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------ FOOTER WRAPPER STYLE -------------- */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+const FooterWrapper = styled.div`
+  width: 100%;
+  background-color: #121c24;
+  box-shadow: #192530 2px 0px 5px;
+  border-top: 2px solid #192530;
+`;
+
+const Cc = styled.span`
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  padding: 25px 0;
+  color: #f1f1f1;
+  margin: auto;
+`;
+
+/* ------------------------------------------------ */
 /* ------------ SOCIAL LINKS STYLE ---------------- */
 /* ------------------------------------------------ */
 const Socials = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 100px;
+  padding: 25px;
+  padding-bottom: 25px;
+  p {
+    color: #f1f1f1;
+    margin: 0;
+    font-size: 1em;
+    margin-left: 25px;
+  }
+  h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 10px #121c24;
+  }
 
   a {
+    width: 200px;
+    padding: 5px 25px;
+    margin-left: 25px;
     font-family: "Oswald", sans-serif;
+    font-size: 1.2em;
     font-weight: 300;
     color: #f1f1f1;
-    width: 40%;
-    margin: 5px 10%;
-    padding: 5px 25px;
     background-color: #1f2f3c;
     transition: 0.3s;
     animation: fadein 0.3s;
     border: #111921 1px solid;
     box-shadow: #192530 1px 1px 5px;
+    align-items: center;
+    border-radius: 5px;
   }
 
   a:hover {
@@ -527,71 +533,22 @@ const Socials = styled.div`
     color: #f1f1f1;
     text-decoration: underline;
   }
-
-  /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
-    a {
-      font-size: 0.8em;
-      align-content: center;
-      margin: 5px auto;
-    }
-
-    p {
-      align-content: center;
-      margin: 5px auto;
-    }
-  }
-
-  /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-width: 768px) and (max-width: 1223px) {
-    a {
-      font-size: 1em;
-      align-content: center;
-      margin: 5px auto;
-    }
-
-    p {
-      align-content: center;
-      margin: 5px auto;
-    }
-  }
-
-  /* Desktops and laptops ----------- */
-  @media only screen and (min-width: 1224px) {
-    a {
-      font-size: 1.2em;
-    }
-  }
-
-  /* Large screens ----------- */
-  @media only screen and (min-width: 1824px) {
-    a {
-      font-size: 1.6em;
-    }
-  }
 `;
 
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
-/* ------------ FOOTER WRAPPER STYLE -------------- */
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
-const FooterWrapper = styled.div`
-  width: 100%;
-  height: 60px;
-  background-color: #121c24;
-  box-shadow: #192530 2px 0px 5px;
-
-  border-top: 2px solid #192530;
-
-  p {
-    font-family: "Oswald", sans-serif;
-    color: #f1f1f1;
-    text-shadow: 2px 2px #121c24;
-    text-align: center;
-    margin: auto;
-    padding: 0;
-  }
+const Icon = styled.div`
+  font-size: 1.2em;
+  display: flex;
+  position: fixed;
+  padding: 20px;
+  right: 0;
+  align-items: center;
+`;
+const Svg = styled.span`
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 1.2em;
 `;
 
 export {
@@ -600,8 +557,6 @@ export {
   Logo,
   Image,
   Headline,
-  Nav,
-  Link,
   TextWrapper,
   ExampleWrapper,
   Examples,
@@ -611,10 +566,10 @@ export {
   ContactWrapper,
   Socials,
   FooterWrapper,
+  Cc,
   logo,
-  nav1,
-  nav2,
-  nav3,
+  Icon,
+  Svg,
   image1,
   image2,
   image3,

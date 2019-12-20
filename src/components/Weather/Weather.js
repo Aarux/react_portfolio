@@ -2,12 +2,27 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const WeatherContainer = styled.div`
-  p {
-    color: #000;
-    text-align: center;
-    padding: 10px;
+  width: 120px;
+  display: flex;
+  position: fixed;
+  margin-right: 10px;
+  align-items: center;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  right: 0;
+`;
+
+const P = styled.p`
+  align-items: center;
+  display: flex;
+  font-size: 1em;
+  color: #f1f1f1;
+  strong {
+    margin-left: 5px;
+    margin-top: -3px;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     display: none;
   }
 `;
@@ -36,10 +51,9 @@ export class Weather extends Component {
   render() {
     return (
       <WeatherContainer>
-        <p>
-          {" "}
-          {this.state.name} {this.state.temp} ˚
-        </p>
+        <P>
+          {this.state.name}: {this.state.temp}˚ <strong> |</strong>
+        </P>
       </WeatherContainer>
     );
   }
