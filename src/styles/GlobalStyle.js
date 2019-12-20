@@ -247,7 +247,7 @@ const Logo = styled.div`
 const Image = styled.div`
   height: 100vh;
   width: 100%;
-  background-image: url(${banner1080p});
+  background-image: url(${banner480p});
   background-size: cover;
   background-position: center;
   display: flex;
@@ -255,19 +255,19 @@ const Image = styled.div`
   flex-wrap: wrap;
   text-align: center;
   box-shadow: #192530 0px 2px 5px;
-  @media only screen and (max-height: 480px) {
-    background-image: url(${banner480p});
-  }
-  @media only screen and (max-height: 720px) {
+  @media only screen and (min-width: 320px) and (max-width: 1223px) {
     background-image: url(${banner720p});
   }
-  @media only screen and (max-height: 900px) {
+  @media only screen and (min-width: 1224px) {
     background-image: url(${banner900p});
   }
-  @media only screen and (max-height: 1440px) {
+  @media only screen and (min-width: 1824px) {
+    background-image: url(${banner1080p});
+  }
+  @media only screen and (min-width: 2020px) {
     background-image: url(${banner1440p});
   }
-  @media only screen and (max-height: 2160px) {
+  @media only screen and (min-width: 3000px) {
     background-image: url(${banner2160p});
   }
 `;
