@@ -601,10 +601,28 @@ const Cc = styled.span`
   display: flex;
   justify-content: center;
   font-family: "Oswald", sans-serif;
-  font-size: 1.2em;
   padding: 25px 0;
   color: var(--color-offWhite);
   margin: auto;
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 0.8em;
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-width: 768px) and (max-width: 1223px) {
+    font-size: 1em;
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1224px) {
+    font-size: 1.2em;
+  }
+
+  /* Large screens ----------- */
+  @media only screen and (min-width: 1824px) {
+    font-size: 1.6em;
+  }
 `;
 
 const Icon = styled.div`
