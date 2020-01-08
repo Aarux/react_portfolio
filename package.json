@@ -14,6 +14,8 @@
     "serialize-javascript": "^2.1.2",
     "styled-components": "^4.2.0",
     "tsutils": "^3.17.1",
+    "typeface-lobster": "0.0.72",
+    "typeface-roboto": "0.0.75",
     "typescript": "^3.7.3"
   },
   "scripts": {

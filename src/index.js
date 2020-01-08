@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./components/App/App";
 import * as serviceWorker from "./serviceWorker";
+require("typeface-roboto");
+require("typeface-lobster");
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
