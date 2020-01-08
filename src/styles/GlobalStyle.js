@@ -1,7 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
-import "typeface-roboto";
-import "typeface-lobster";
 
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
@@ -27,6 +25,28 @@ import project2 from "../assets/project2.jpg";
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
 const GlobalStyle = createGlobalStyle`
+/* Color, Border, Box-Shadow and Text-Shadow variables. */
+:root{
+  --color-lightMainBlue: #213D54;
+  --color-darkMainBlue: #1F2F3C;
+  --color-darkBlueGrey: #192530;
+  --color-lightDarkGrey: #121C24;
+  --color-darkDarkGrey: #111921;
+  --color-offWhite: #F1F1F1;
+  
+  --border-Main: 2px solid #192530;
+  --border-lightMain: 1px solid #192530;
+  --border-Secondary: 2px solid #121c24;
+  --border-lightSecondary: 1px solid #121c24;
+  --border-Tertiary: 1px solid #111921;
+
+  --boxShadow-Main: 1px 1px 5px #192530;
+  --boxShadow-Secondary: 2px 2px 5px #192530;
+
+  --textShadow-Main: 1px 1px 10px #121c24;
+  --textShadow-Secondary: 1px 1px 5px #111921;
+}
+
 html{
   margin:0;
   padding:0;
@@ -37,24 +57,23 @@ html{
 
 p{
   font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  color: #121c24;
+  color: var(--color-lightDarkGrey);
   padding:5px 0;
   margin: 0 8%;
 }
 strong {
-    color: #213d54;
+    color: var(--color-lightMainBlue);
   }
 h1{
   font-family: 'Lobster', cursive;
-  color: #f1f1f1;
+  color: var(--color-offWhite);
   margin:0;
   padding:0;
 }
 
 h2{
   font-family: 'Lobster', cursive;
-  color: #213d54;
+  color: var(--color-lightMainBlue);
   text-align: center;
   margin: auto;
   padding:10px;
@@ -63,16 +82,16 @@ h2{
 
 h3{
   font-family: 'Lobster', cursive;
-  color: #213d54;
+  color: var(--color-lightMainBlue);
   margin-top: 100px;
   padding: 0 25px;
   margin: 0 8%;
-  border-left: 2px solid #121c24;
+  border-left: var(--border-Secondary);
 }
 
 h4{
   font-family: 'Lobster', cursive;
-  color: #f1f1f1;
+  color: var(--color-offWhite);
   text-align: center;
   margin: auto;
   padding: 10px;
@@ -204,10 +223,10 @@ hr{
 const HeaderWrapper = styled.div`
   width: 100%;
   height: 60px;
-  background-color: #121c24;
+  background-color: var(--color-lightDarkGrey);
   z-index: 100;
   position: fixed;
-  box-shadow: #192530 2px 2px 5px;
+  box-shadow: var(--boxShadow-Secondary);
 `;
 
 /* ------------------------------------------------ */
@@ -218,7 +237,7 @@ const Logo = styled.div`
   padding-left: 10px;
   display: flex;
   flex-flow: row nowrap;
-  border-bottom: 2px solid #192530;
+  border-bottom: var(--border-Main);
   transition: 0.2s;
   animation: fadein 0.3s;
   align-items: center;
@@ -228,14 +247,14 @@ const Logo = styled.div`
     height: 45px;
     border-radius: 50%;
     align-items: center;
-    border: 1px solid #192530;
-    background-color: #111921;
+    border: var(--border-lightMain);
+    background-color: var(--color-darkDarkGrey);
   }
 
   h2 {
     font-size: 2em;
-    color: #f1f1f1;
-    text-shadow: 1px 1px 5px #111921;
+    color: var(--color-offWhite);
+    text-shadow: var(--textShadow-Secondary);
     align-items: center;
     margin-left: 0;
     padding-left: 10px;
@@ -252,12 +271,12 @@ const Image = styled.div`
   background-image: url(${banner480p});
   background-size: cover;
   background-position: center;
-  background-color: #121c24;
+  background-color: var(--color-lightDarkGrey);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
-  box-shadow: #192530 0px 2px 5px;
+  box-shadow: 0px 2px 5px var(--color-darkBlueGrey);
   @media only screen and (min-width: 320px) and (max-width: 1223px) {
     background-image: url(${banner720p});
   }
@@ -283,7 +302,7 @@ const Headline = styled.div`
   margin: auto;
 
   h1 {
-    text-shadow: 1px 1px 10px #121c24;
+    text-shadow: var(--textShadow-Main);
   }
 `;
 
@@ -322,7 +341,7 @@ const Examples = styled.div`
   img {
     width: calc(30% - 2px);
     margin: 1.66%;
-    box-shadow: #192530 2px 2px 5px;
+    box-shadow: var(--boxShadow-Secondary);
   }
 `;
 
@@ -336,18 +355,18 @@ const Projects = styled.div`
   padding-bottom: 50px;
 
   h1 {
-    color: #213d54;
+    color: var(--color-lightMainBlue);
     margin-top: 100px;
     padding: 0 25px;
     margin: 10px 8%;
     margin-top: 50px;
-    border-left: 2px solid #121c24;
+    border-left: var(--border-Secondary);
   }
 
   img {
     width: calc(84% - 2px);
     margin: 0 8%;
-    box-shadow: #192530 1px 1px 5px;
+    box-shadow: var(--boxShadow-Main);
   }
 
   a {
@@ -355,22 +374,21 @@ const Projects = styled.div`
     margin: 0 8%;
     font-family: "Oswald", sans-serif;
     font-size: 1.2em;
-    font-weight: 300;
-    color: #f1f1f1;
-    background-color: #1f2f3c;
+    color: var(--color-offWhite);
+    background-color: var(--color-darkMainBlue);
     transition: 0.3s;
     animation: fadein 0.3s;
-    border: #111921 1px solid;
-    box-shadow: #192530 1px 1px 5px;
+    border: var(--border-Tertiary);
+    box-shadow: var(--boxShadow-Main);
     align-items: center;
     justify-content: center;
     padding: 5px;
     border-radius: 5px;
   }
   a:hover {
-    background: #213d54;
-    border: 1px solid #192530;
-    color: #f1f1f1;
+    background: var(--color-lightMainBlue);
+    border: var(--border-lightMain);
+    color: var(--color-offWhite);
     text-decoration: underline;
   }
   /* Smartphones (portrait and landscape) ----------- */
@@ -441,23 +459,22 @@ const AboutWrapper = styled.div`
 const InfoLinks = styled.div`
   a {
     font-family: "Oswald", sans-serif;
-    font-weight: 300;
     font-size: 1.5rem;
-    color: #f1f1f1;
+    color: var(--color-offWhite);
     width: 40%;
     margin: 5px 10%;
     padding: 5px 25px;
-    background-color: #1f2f3c;
+    background-color: var(--color-darkMainBlue);
     transition: 0.3s;
     animation: fadein 0.3s;
-    border: #111921 1px solid;
-    box-shadow: #192530 1px 1px 5px;
+    border: var(--border-Tertiary);
+    box-shadow: var(--boxShadow-Main);
   }
 
   a:hover {
-    background: #213d54;
-    border: 1px solid #192530;
-    color: #f1f1f1;
+    background: var(--color-lightMainBlue);
+    border: var(--border-lightMain);
+    color: var(--color-offWhite);
     text-decoration: underline;
   }
   /* Smartphones (portrait and landscape) ----------- */
@@ -510,13 +527,13 @@ const InfoLinks = styled.div`
 /* ------------------------------------------------ */
 const FooterWrapper = styled.div`
   width: 100%;
-  background-color: #121c24;
-  box-shadow: #192530 2px 0px 5px;
-  border-top: 2px solid #192530;
+  background-color: var(--color-lightDarkGrey);
+  box-shadow: 2px 0px 5px var(--color-darkBlueGrey);
+  border-top: var(--border-Main);
   text-align: center;
   h3 {
-    color: #f1f1f1;
-    text-shadow: 1px 1px 10px #121c24;
+    color: var(--color-offWhite);
+    text-shadow: var(--textShadow-Main);
     padding: 20px;
     margin: 0 auto;
     align-items: center;
@@ -528,22 +545,21 @@ const FooterWrapper = styled.div`
     margin: 0 auto;
     font-family: "Oswald", sans-serif;
     font-size: 1.2em;
-    font-weight: 300;
-    color: #f1f1f1;
-    background-color: #1f2f3c;
+    color: var(--color-offWhite);
+    background-color: var(--color-darkMainBlue);
     transition: 0.3s;
     animation: fadein 0.3s;
-    border: #111921 1px solid;
-    box-shadow: #192530 1px 1px 5px;
+    border: var(--border-Tertiary);
+    box-shadow: var(--boxShadow-Main);
     align-items: center;
     justify-content: center;
     padding: 5px;
     border-radius: 5px;
   }
   a:hover {
-    background: #213d54;
-    border: 1px solid #192530;
-    color: #f1f1f1;
+    background: var(--color-lightMainBlue);
+    border: var(--border-lightMain);
+    color: var(--color-offWhite);
     text-decoration: underline;
   }
 
@@ -586,9 +602,8 @@ const Cc = styled.span`
   justify-content: center;
   font-family: "Oswald", sans-serif;
   font-size: 1.2em;
-  font-weight: 300;
   padding: 25px 0;
-  color: #f1f1f1;
+  color: var(--color-offWhite);
   margin: auto;
 `;
 

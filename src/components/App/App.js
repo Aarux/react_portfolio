@@ -7,8 +7,6 @@ import Example from "../Example";
 import Gallery from "../Gallery";
 import About from "../About";
 import Footer from "../Footer";
-require("typeface-roboto");
-require("typeface-lobster");
 
 const App = () => (
   <div>
