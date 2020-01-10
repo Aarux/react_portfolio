@@ -7,7 +7,7 @@ export class Gallery extends Component {
   render() {
     return (
       <Projects>
-        <h2>Project Gallery</h2>
+        <h1 className="h1">Project Gallery</h1>
         <p>
           Here are two example projects i've worked on so far. Once i have more
           projects to show i going to redesign this portfolio to better support
@@ -17,7 +17,7 @@ export class Gallery extends Component {
           the bottom and under the projects if available.
         </p>
         <p>Without further ado, let's get into the projects!</p>
-        <h1>Project Grex/Booking app</h1>
+        <h2>Project Grex</h2>
         <img src={project1} alt="" />
         <p>
           <strong>Key Functions:</strong>
@@ -55,7 +55,7 @@ export class Gallery extends Component {
           </Svg>
         </a>
 
-        <h1>Project Locus</h1>
+        <h2>Project Locus</h2>
         <img src={project2} alt="" />
         <p>
           <strong>Project goal:</strong>

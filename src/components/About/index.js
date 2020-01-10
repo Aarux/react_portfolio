@@ -5,7 +5,7 @@ export class About extends Component {
   render() {
     return (
       <AboutWrapper>
-        <h2>About me</h2>
+        <h1 className="h1">About me</h1>
         <h3>Introduction:</h3>
         <p>
           Hello! My name is Gustav Bergman and i'm a 24 y/o student from Sweden.

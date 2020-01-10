@@ -22,7 +22,7 @@ const P = styled.p`
     margin-left: 10px;
     margin-top: -3px;
   }
-  @media (max-width: 600px) {
+  @media screen and (max-width: 400px) {
     display: none;
   }
 `;

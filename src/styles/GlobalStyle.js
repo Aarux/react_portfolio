@@ -71,10 +71,18 @@ h1{
   padding:0;
 }
 
-h2{
+.h1{
   font-family: 'Lobster', cursive;
   color: var(--color-lightMainBlue);
   text-align: center;
+  margin: auto;
+  padding:10px;
+  padding-bottom: 25px;
+}
+
+h2{
+  font-family: 'Lobster', cursive;
+  color: var(--color-lightMainBlue);
   margin: auto;
   padding:10px;
   padding-bottom: 50px;
@@ -113,24 +121,53 @@ hr{
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-
   /* ------------------------------------------------ */
   /* ------------------------------------------------ */
   /* ------------ GLOBAL MEDIA QUERY ---------------- */
   /* ------------------------------------------------ */
   /* ------------------------------------------------ */
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-width : 320px) and (max-width : 767px) {
+  @media  screen and (min-width : 320px){
     p{
       font-size: 0.8em;
     }
 
     h1{
-      font-size: 2.7em;
+      font-size: 2.2em;
+    }
+    
+    .h1{
+      font-size: 1.9em;
     }
     
     h2{
-      font-size: 2.2em;
+      font-size: 1.7em;
+    }
+    
+    h3{
+      font-size: 1.2em;
+    }
+    
+    h4{
+      font-size: 1em;      
+    }
+  }
+  /* Smartphones (landscape) ----------- */
+  @media  screen and (min-width : 361px){
+    p{
+      font-size: 0.8em;
+    }
+
+    h1{
+      font-size: 2.4em;
+    }
+    
+    .h1{
+      font-size: 2.1em;
+    }
+
+    h2{
+      font-size: 1.9em;
     }
     
     h3{
@@ -143,17 +180,21 @@ hr{
   }
 
   /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-width : 768px) and (max-width : 1223px) {
+  @media  screen and (min-width : 768px){
     p{
       font-size: 1em;
     }
 
     h1{
-      font-size: 3.1em;
+      font-size: 2.8em;
+    }
+
+    .h1{
+      font-size: 2.5em;
     }
     
     h2{
-      font-size: 2.6em;
+      font-size: 2.1em;
     }
     
     h3{
@@ -166,17 +207,21 @@ hr{
   }
   
   /* Desktops and laptops ----------- */
-  @media only screen  and (min-width : 1224px) {
+  @media  screen  and (min-width : 1224px) {
     p{
       font-size: 1.2em;
     }
 
     h1{
-      font-size: 3.4em;
+      font-size: 3.1em;
+    }
+
+    .h1{
+      font-size: 2.8em;
     }
     
     h2{
-      font-size: 2.9em;
+      font-size: 2.3em;
     }
     
     h3{
@@ -189,7 +234,7 @@ hr{
   }
 
   /* Large screens ----------- */
-  @media only screen  and (min-width : 1824px) {
+  @media  screen  and (min-width : 1824px) {
     p{
       font-size: 1.6em;
       padding: 10px 25px;
@@ -197,11 +242,15 @@ hr{
     }
 
     h1{
-      font-size: 3.7em;
+      font-size: 3.5em;
+    }
+    
+    .h1{
+      font-size: 3.2em;
     }
     
     h2{
-      font-size: 3.2em;
+      font-size: 3em;
     }
     
     h3{
@@ -252,12 +301,12 @@ const Logo = styled.div`
   }
 
   h2 {
-    font-size: 2em;
+    margin: 0;
+    padding: 0;
     color: var(--color-offWhite);
     text-shadow: var(--textShadow-Secondary);
-    align-items: center;
     margin-left: 0;
-    padding-left: 10px;
+    padding-left: 5px;
     border-bottom: none;
   }
 `;
@@ -268,7 +317,6 @@ const Logo = styled.div`
 const Image = styled.div`
   height: 100vh;
   width: 100%;
-  background-image: url(${banner480p});
   background-size: cover;
   background-position: center;
   background-color: var(--color-lightDarkGrey);
@@ -277,19 +325,22 @@ const Image = styled.div`
   flex-wrap: wrap;
   text-align: center;
   box-shadow: 0px 2px 5px var(--color-darkBlueGrey);
-  @media only screen and (min-width: 320px) and (max-width: 1223px) {
+  @media screen and (min-width: 320px) {
+    background-image: url(${banner480p});
+  }
+  @media screen and (min-width: 768px) {
     background-image: url(${banner720p});
   }
-  @media only screen and (min-width: 1224px) {
+  @media screen and (min-width: 900px) {
     background-image: url(${banner900p});
   }
-  @media only screen and (min-width: 1824px) {
+  @media screen and (min-width: 1080px) {
     background-image: url(${banner1080p});
   }
-  @media only screen and (min-width: 2020px) {
+  @media screen and (min-width: 1440px) {
     background-image: url(${banner1440p});
   }
-  @media only screen and (min-width: 3000px) {
+  @media screen and (min-width: 2160px) {
     background-image: url(${banner2160p});
   }
 `;
@@ -354,7 +405,7 @@ const Projects = styled.div`
   width: 100%;
   padding-bottom: 50px;
 
-  h1 {
+  h2 {
     color: var(--color-lightMainBlue);
     margin-top: 100px;
     padding: 0 25px;
@@ -373,7 +424,6 @@ const Projects = styled.div`
     width: 33%;
     margin: 0 8%;
     font-family: "Oswald", sans-serif;
-    font-size: 1.2em;
     color: var(--color-offWhite);
     background-color: var(--color-darkMainBlue);
     transition: 0.3s;
@@ -392,49 +442,34 @@ const Projects = styled.div`
     text-decoration: underline;
   }
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-width: 320px) and (max-width: 479px) {
-    h1 {
-      font-size: 1.9em;
-    }
+  @media screen and (min-width: 320px) {
     a {
       font-size: 0.6em;
     }
   }
 
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    h1 {
-      font-size: 2.1em;
-    }
+  @media screen and (min-width: 480px) {
     a {
       font-size: 0.8em;
     }
   }
 
   /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-width: 768px) and (max-width: 1223px) {
-    h1 {
-      font-size: 2.3em;
-    }
+  @media screen and (min-width: 768px) {
     a {
       font-size: 1em;
     }
   }
 
   /* Desktops and laptops ----------- */
-  @media only screen and (min-width: 1224px) {
-    h1 {
-      font-size: 2.6em;
-    }
+  @media screen and (min-width: 1224px) {
     a {
       font-size: 1.2em;
     }
   }
 
   /* Large screens ----------- */
-  @media only screen and (min-width: 1824px) {
-    h1 {
-      font-size: 2.9em;
-    }
+  @media screen and (min-width: 1824px) {
     a {
       font-size: 1.6em;
     }
@@ -459,7 +494,7 @@ const AboutWrapper = styled.div`
 const InfoLinks = styled.div`
   a {
     font-family: "Oswald", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: var(--color-offWhite);
     width: 40%;
     margin: 5px 10%;
@@ -478,7 +513,7 @@ const InfoLinks = styled.div`
     text-decoration: underline;
   }
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) {
     a {
       font-size: 0.8em;
       align-content: center;
@@ -492,7 +527,7 @@ const InfoLinks = styled.div`
   }
 
   /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-width: 768px) and (max-width: 1223px) {
+  @media screen and (min-width: 768px) {
     a {
       font-size: 1em;
       align-content: center;
@@ -506,14 +541,14 @@ const InfoLinks = styled.div`
   }
 
   /* Desktops and laptops ----------- */
-  @media only screen and (min-width: 1224px) {
+  @media screen and (min-width: 1224px) {
     a {
       font-size: 1.2em;
     }
   }
 
   /* Large screens ----------- */
-  @media only screen and (min-width: 1824px) {
+  @media screen and (min-width: 1824px) {
     a {
       font-size: 1.6em;
     }
@@ -563,34 +598,34 @@ const FooterWrapper = styled.div`
     text-decoration: underline;
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 479px) {
+  @media screen and (min-width: 320px) {
     a {
       font-size: 0.6em;
     }
   }
 
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     a {
       font-size: 0.8em;
     }
   }
 
   /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-width: 768px) and (max-width: 1223px) {
+  @media screen and (min-width: 768px) {
     a {
       font-size: 1em;
     }
   }
 
   /* Desktops and laptops ----------- */
-  @media only screen and (min-width: 1224px) {
+  @media screen and (min-width: 1224px) {
     a {
       font-size: 1.2em;
     }
   }
 
   /* Large screens ----------- */
-  @media only screen and (min-width: 1824px) {
+  @media screen and (min-width: 1824px) {
     a {
       font-size: 1.6em;
     }
@@ -605,22 +640,22 @@ const Cc = styled.span`
   color: var(--color-offWhite);
   margin: auto;
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) {
     font-size: 0.8em;
   }
 
   /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-width: 768px) and (max-width: 1223px) {
+  @media screen and (min-width: 768px) {
     font-size: 1em;
   }
 
   /* Desktops and laptops ----------- */
-  @media only screen and (min-width: 1224px) {
+  @media screen and (min-width: 1224px) {
     font-size: 1.2em;
   }
 
   /* Large screens ----------- */
-  @media only screen and (min-width: 1824px) {
+  @media screen and (min-width: 1824px) {
     font-size: 1.6em;
   }
 `;
@@ -632,6 +667,9 @@ const Icon = styled.div`
   padding: 20px;
   right: 0;
   align-items: center;
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
 `;
 const Svg = styled.span`
   margin: 0;
