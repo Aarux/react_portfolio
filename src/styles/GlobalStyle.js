@@ -18,6 +18,7 @@ import image2 from "../assets/image2.jpg";
 import image3 from "../assets/image3.jpg";
 import project1 from "../assets/project1.jpg";
 import project2 from "../assets/project2.jpg";
+import project3 from "../assets/project3.jpg";
 
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
@@ -700,5 +701,6 @@ export {
   image2,
   image3,
   project1,
-  project2
+  project2,
+  project3
 };

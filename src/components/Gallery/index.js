@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { Projects, project1, project2, Svg } from "../../styles/GlobalStyle";
+import {
+  Projects,
+  project1,
+  project2,
+  project3,
+  Svg
+} from "../../styles/GlobalStyle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -75,6 +81,20 @@ export class Gallery extends Component {
           Photoshop. Considering i was really new to Photoshop im really happy
           with the end result.
         </p>
+        <p>
+          Link to Project <strong>{"> "}</strong>
+          <strong>Unavailable</strong>
+        </p>
+        <h2>Project Locus Remake</h2>
+        <img src={project3} alt="" />
+        <p>
+          <strong>Project goal:</strong>
+        </p>
+        <p>Remake and improve the original image with a new concept.</p>
+        <p>
+          <strong>Result:</strong>
+        </p>
+        <p>This is an ongoing work in progress! {"(WIP)"}</p>
         <p>
           Link to Project <strong>{"> "}</strong>
           <strong>Unavailable</strong>
