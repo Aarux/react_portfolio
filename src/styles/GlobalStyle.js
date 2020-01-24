@@ -6,12 +6,7 @@ import styled from "styled-components";
 /* -------------- IMAGE IMPORTS ------------------- */
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
-import banner480p from "../assets/banner480p.jpg";
-import banner720p from "../assets/banner720p.jpg";
-import banner900p from "../assets/banner900p.jpg";
 import banner1080p from "../assets/banner1080p.jpg";
-import banner1440p from "../assets/banner1440p.jpg";
-import banner2160p from "../assets/banner2160p.jpg";
 import logo from "../assets/logo.jpg";
 import image1 from "../assets/image1.jpg";
 import image2 from "../assets/image2.jpg";
@@ -270,7 +265,7 @@ hr{
 /* ------------ HEADER WRAPPER STYLE -------------- */
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
-const HeaderWrapper = styled.div`
+const Header = styled.div`
   width: 100%;
   height: 60px;
   background-color: var(--color-lightDarkGrey);
@@ -315,9 +310,10 @@ const Logo = styled.div`
 /* ------------------------------------------------ */
 /* ----------- HEADER IMAGE STYLE ----------------- */
 /* ------------------------------------------------ */
-const Image = styled.div`
+const Banner = styled.div`
   height: 100vh;
   width: 100%;
+  background-image: url(${banner1080p});
   background-size: cover;
   background-position: center;
   background-color: var(--color-lightDarkGrey);
@@ -326,24 +322,6 @@ const Image = styled.div`
   flex-wrap: wrap;
   text-align: center;
   box-shadow: 0px 2px 5px var(--color-darkBlueGrey);
-  @media screen and (min-width: 320px) {
-    background-image: url(${banner480p});
-  }
-  @media screen and (min-width: 768px) {
-    background-image: url(${banner720p});
-  }
-  @media screen and (min-width: 900px) {
-    background-image: url(${banner900p});
-  }
-  @media screen and (min-width: 1080px) {
-    background-image: url(${banner1080p});
-  }
-  @media screen and (min-width: 1440px) {
-    background-image: url(${banner1440p});
-  }
-  @media screen and (min-width: 2160px) {
-    background-image: url(${banner2160p});
-  }
 `;
 
 /* ------------------------------------------------ */
@@ -682,9 +660,9 @@ const Svg = styled.span`
 
 export {
   GlobalStyle,
-  HeaderWrapper,
+  Header,
   Logo,
-  Image,
+  Banner,
   Headline,
   TextWrapper,
   ExampleWrapper,
