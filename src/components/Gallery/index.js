@@ -19,7 +19,7 @@ export class Gallery extends Component {
           more projects to show i going to redesign this portfolio to better
           support showcasing multiple projects. I picked one graphic design
           project and one front-end project to showcase for now. If you want to
-          check out more stuff i&aposve been working on then you can find my
+          check out more stuff i&apos;ve been working on then you can find my
           GitHub link at the bottom and under the projects if available.
         </p>
         <p>Without further ado, let&apos;s get into the projects!</p>
@@ -34,7 +34,7 @@ export class Gallery extends Component {
           stuff. When you sign up you can do so with different roles: ADMIN,
           TEACHER, STUDENT or no role. Depending on the different roles you will
           get different access. ADMIN and TEACHER is the only role that gets
-          full access. Let&aposs check out the different key functions.
+          full access. Let&apos;s check out the different key functions.
         </p>
         <p>
           <strong>Features:</strong>
