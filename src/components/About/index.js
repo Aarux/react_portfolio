@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { AboutWrapper /*InfoLinks*/ } from "../../styles/GlobalStyle";
+import { AboutWrapper } from "../../styles/GlobalStyle";
 
 export class About extends Component {
   render() {
@@ -8,24 +8,24 @@ export class About extends Component {
         <h1 className="h1">About me</h1>
         <h3>Introduction</h3>
         <p>
-          Hello! My name is Gustav Bergman and i'm a 24 y/o student from Sweden.
-          I am currently studying "Front-End Developer" at KYH in Stockholm,
-          Sweden.
+          Hello! My name is Gustav Bergman and i&apos;m a 24 y/o student from
+          Sweden. I am currently studying &quot;Front-End Developer&quot; at KYH
+          in Stockholm, Sweden.
         </p>
         <p>
-          Below you can read the courses i've taken so far at KYH{" "}
-          {"(Front-end)"} with the main focus marked with "
-          <strong>{">"}</strong>".
+          Below you can read the courses i&apos;ve taken so far at KYH
+          (Front-end) with the main focus marked with
+          <strong>&gt;</strong>.
         </p>
         <ul>
           <li>
             <p>
-              <strong>{">"}</strong> JavaScript & React.js
+              <strong>&gt;</strong> JavaScript & React.js
             </p>
           </li>
           <li>
             <p>
-              <strong>{">"}</strong> Internship
+              <strong>&gt;</strong> Internship
             </p>
           </li>
           <li>
@@ -45,9 +45,10 @@ export class About extends Component {
           </li>
         </ul>
         <p>
-          Before "Front-end Developer" i studied Technology, so i have a Tech
-          degree with a focus on Media Technology. Below you can see some of the
-          front-end relevant tech/media courses i've studied previously.
+          Before &quot;Front-end Developer&quot; i studied Technology, so i have
+          a Tech degree with a focus on Media Technology. Below you can see some
+          of the front-end relevant tech/media courses i&apos;ve studied
+          previously.
         </p>
         <ul>
           <li>
@@ -63,7 +64,6 @@ export class About extends Component {
             <p>User Interface Design</p>
           </li>
         </ul>
-        <p></p>
       </AboutWrapper>
     );
   }

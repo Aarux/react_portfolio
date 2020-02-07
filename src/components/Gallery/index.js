@@ -15,14 +15,14 @@ export class Gallery extends Component {
       <Projects>
         <h1 className="h1">Project Gallery</h1>
         <p>
-          Here are two example projects i've worked on so far. Once i have more
-          projects to show i going to redesign this portfolio to better support
-          showcasing multiple projects. I picked one graphic design project and
-          one front-end project to showcase for now. If you want to check out
-          more stuff i've been working on then you can find my GitHub link at
-          the bottom and under the projects if available.
+          Here are two example projects i&apos;ve worked on so far. Once i have
+          more projects to show i going to redesign this portfolio to better
+          support showcasing multiple projects. I picked one graphic design
+          project and one front-end project to showcase for now. If you want to
+          check out more stuff i&aposve been working on then you can find my
+          GitHub link at the bottom and under the projects if available.
         </p>
-        <p>Without further ado, let's get into the projects!</p>
+        <p>Without further ado, let&apos;s get into the projects!</p>
         <h2>Project Grex</h2>
         <img src={project1} alt="" />
         <p>
@@ -34,25 +34,25 @@ export class Gallery extends Component {
           stuff. When you sign up you can do so with different roles: ADMIN,
           TEACHER, STUDENT or no role. Depending on the different roles you will
           get different access. ADMIN and TEACHER is the only role that gets
-          full access. Let's check out the different key functions.
+          full access. Let&aposs check out the different key functions.
         </p>
         <p>
           <strong>Features:</strong>
         </p>
         <p>
-          <strong>{">"}</strong> Create bookings with custom descriptions and
+          <strong>&gt;</strong> Create bookings with custom descriptions and
           invite any users you like with the search function.
         </p>
         <p>
-          <strong>{">"}</strong> Track attending students with map and ETAs
+          <strong>&gt;</strong> Track attending students with map and ETAs
           generated based on their proximity to the school.
         </p>
         <p>
-          <strong>{">"}</strong> Automatically get updated when the students are
+          <strong>&gt;</strong> Automatically get updated when the students are
           within school vicinity, no more paperwork.
         </p>
         <p>
-          Link to Project <strong>{">"}</strong>
+          Link to Project <strong>&gt;</strong>
         </p>
         <a href="https://github.com/pazsea/booking-app">
           Booking app - Github
@@ -71,7 +71,7 @@ export class Gallery extends Component {
           webdevelopment. The goal was to draw and color an image using
           photoshop which i would then use in my webdevelopment project as one
           of the images featured in a slider on the front page. I decided to
-          draw the locus helmet form the "HALO" video-game franchise.
+          draw the locus helmet form the &quot;HALO&quot; video-game franchise.
         </p>
         <p>
           <strong>Result:</strong>
@@ -82,7 +82,7 @@ export class Gallery extends Component {
           with the end result.
         </p>
         <p>
-          Link to Project <strong>{"> "}</strong>
+          Link to Project <strong>&gt; </strong>
           <strong>Unavailable</strong>
         </p>
         <h2>Project Locus Remake</h2>
@@ -94,9 +94,9 @@ export class Gallery extends Component {
         <p>
           <strong>Result:</strong>
         </p>
-        <p>This is an ongoing work in progress! {"(WIP)"}</p>
+        <p>This is an ongoing work in progress!</p>
         <p>
-          Link to Project <strong>{"> "}</strong>
+          Link to Project <strong>&gt; </strong>
           <strong>Unavailable</strong>
         </p>
       </Projects>

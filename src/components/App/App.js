@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import {
   GlobalStyle,
   Banner,
@@ -8,23 +8,19 @@ import {
   logo,
   Icon
 } from "../../styles/GlobalStyle";
-// import Header from "../Header";
-// import Banner from "../Banner";
 import Text from "../Text";
 import Example from "../Example";
 import Gallery from "../Gallery";
 import About from "../About";
 import Footer from "../Footer";
-// import { Image, Headline } from "../../styles/GlobalStyle";
-// import { HeaderWrapper, Logo, logo, Icon } from "../../styles/GlobalStyle";
 import Weather from "../Weather/Weather";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTemperatureLow } from "@fortawesome/free-solid-svg-icons";
 
-export class App extends Component {
+class App extends Component {
   render() {
     return (
-      <Fragment>
+      <div>
         <GlobalStyle />
         <Header>
           <Logo>
@@ -38,8 +34,8 @@ export class App extends Component {
         </Header>
         <Banner>
           <Headline>
-            <h1>Hi, I'm Gustav.</h1>
-            <h1>I'm a Web Developer & Designer!</h1>
+            <h1>Hi, I&apos;m Gustav.</h1>
+            <h1>I&apos;m a Web Developer & Designer!</h1>
           </Headline>
         </Banner>
         <Text />
@@ -47,8 +43,7 @@ export class App extends Component {
         <Gallery />
         <About />
         <Footer />
-        {/*  Copyright © 2019 Gustav Bergman. All rights reserved.  */}
-      </Fragment>
+      </div>
     );
   }
 }
