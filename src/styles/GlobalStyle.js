@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
 html{
   margin:0;
   padding:0;
-  display:flex;
+  display: flex;
   flex-direction:column;
   flex-wrap: wrap;
   }
@@ -365,6 +365,9 @@ const ExampleWrapper = styled.div`
 /* ------------------------------------------------ */
 const Examples = styled.div`
   width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
 
@@ -682,3 +685,15 @@ export {
   project2,
   project3
 };
+
+// const Examples = styled.div`
+//   display: inline-flex;
+//   justify-content: center;
+//   flex: 1 0 calc(20% - 1.66%);
+//   flex-wrap: wrap;
+//   img {
+//     width: 15%;
+//     margin: 1.66%;
+//     box-shadow: var(--boxShadow-Secondary);
+//   }
+// `;
