@@ -10,13 +10,13 @@ export class Footer extends Component {
       <FooterWrapper>
         <h3>Contact me</h3>
         <a href="mailto:&#103;&#117;&#115;&#116;&#097;&#118;&#095;&#098;&#101;&#114;&#103;&#109;&#097;&#110;&#057;&#053;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
-          Gustav Bergman - E-Mail
+          E-Mail
           <Svg>
             <FontAwesomeIcon icon={faEnvelope} color="white" />
           </Svg>
         </a>
         <a href="https://github.com/Aarux">
-          Gustav Bergman - Github
+          Github
           <Svg>
             <FontAwesomeIcon icon={faGithub} color="white" />
           </Svg>
